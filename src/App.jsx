@@ -1,4 +1,11 @@
 function App() {
+  /*
+  La condicion puede ser de cualquier tipo
+
+  Ej: String
+    Un string que sea cadena vacia dará false
+    Un string con contenido será true
+  */
   const condition = true;
 
   return (
