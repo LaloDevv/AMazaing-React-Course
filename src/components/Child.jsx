@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 function Child() {
   const [counter, setCounter] = useState(0);
 
+  // si devolvemos una funcion, le indicamos a useEffect que queremos que esa funcion se ejecute 
+  // cuando el componente se detruye en el ciclo de vida
   useEffect(() => {
     return () => {
       console.log("El componente se ha desmontado");
