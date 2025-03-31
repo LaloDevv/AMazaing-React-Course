@@ -9,6 +9,12 @@ function Child() {
     }
   }, [])
 
+  // el segundo parametro de useEffect nos permite indicar que variables de estado queremos vigilar
+  // de manera que, en este ejemplo, useEffect solo ocurre cuando la var counter ccambia
+  useEffect(()=>{
+    console.log("la variable counter ha cambiado")
+  }, [counter])
+
   return (
     <div className="child">
       <h2>Este es un componente hijo</h2>
