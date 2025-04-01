@@ -10,6 +10,8 @@ function App() {
     setUsers(data);
   }
 
+  // hacemos el fetch en el momento que se monte el componente (para que no lo haga cada vez que ocurra una recomposicion)
+
   useEffect(() => {
     getUsers();
   }, [])
